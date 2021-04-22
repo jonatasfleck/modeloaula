@@ -1,0 +1,25 @@
+#imagem{
+  height: 480px;
+  /* Aqui é definido o caminho para a imagem de fundo, que ela não se repetirá e será alinhada apartir de seu centro */
+  background-image: url(https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg);
+  /* cover define que a imagem de fundo será ajustada para cobrir a área do
+  container */
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+#imagem>h1{
+  /*
+    absolute define que o elemento será posicionado relativo a seu elemento pai mais próximo 
+    */
+    position: absolute;
+    /* técnica utilizada para centralizar o conteúdo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 8px black;
+    text-align: center;
+    color: #FFF;
+}
